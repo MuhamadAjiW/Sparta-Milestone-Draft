@@ -2,6 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/comfortaa</item>
+        <item>@font/epilogue</item>
+        <item>@font/epilogue_bold</item>
+        <item>@font/epilogue_extrabold</item>
+        <item>@font/epilogue_medium</item>
         <item>@font/pt_sans</item>
         <item>@font/pt_sans_bold</item>
     </array>
