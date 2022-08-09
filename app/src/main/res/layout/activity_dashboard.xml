@@ -58,6 +58,80 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <Button
+                    android:id="@+id/journalButton"
+                    android:layout_width="150dp"
+                    android:layout_height="76dp"
+                    android:background="@drawable/custombutton"
+                    android:backgroundTint="#F4F3F1"
+                    android:fontFamily="@font/epilogue"
+                    android:text="Journal"
+                    android:textAllCaps="false"
+                    android:textColor="#573926"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <Button
+                    android:id="@+id/hotlineButton"
+                    android:layout_width="150dp"
+                    android:layout_height="76dp"
+                    android:background="@drawable/custombutton"
+                    android:backgroundTint="#F4F3F1"
+                    android:fontFamily="@font/epilogue"
+                    android:text="Hotline"
+                    android:textAllCaps="false"
+                    android:textColor="#573926"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="26dp"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+                app:srcCompat="@drawable/ic_journal" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="26dp"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+                app:srcCompat="@drawable/ic_hotline" />
+
             <TextView
                 android:id="@+id/welcomeText"
                 android:layout_width="302dp"
@@ -217,10 +291,12 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageFocused" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
             </HorizontalScrollView>
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="350dp"
                 android:layout_height="165dp"
                 android:layout_marginTop="32dp"
@@ -240,6 +316,37 @@
                     app:shapeAppearanceOverlay="@style/RoundedSquare"
                     app:srcCompat="@android:drawable/title_bar" />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="350dp"
+                android:layout_height="165dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/custombutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="165dp"
+                    android:layout_height="165dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    app:srcCompat="@android:drawable/title_bar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

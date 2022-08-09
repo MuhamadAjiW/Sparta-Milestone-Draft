@@ -32,7 +32,7 @@
         android:background="@drawable/custombutton"
         android:backgroundTint="#EDA19A"
         android:fontFamily="@font/pt_sans_bold"
-
+        android:onClick="loginClick"
         android:text="Sign In"
         android:textAllCaps="false"
         android:textColor="@color/white"
