@@ -171,6 +171,7 @@
                 android:id="@+id/horizontalScrollView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="12dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Feeling">
@@ -217,7 +218,6 @@
                         android:id="@+id/imageHappy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="24dp"
                         android:background="@null"
                         android:scaleType="fitCenter"
                         app:layout_constraintStart_toStartOf="parent"
@@ -239,7 +239,7 @@
                         android:id="@+id/textView7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/epilogue"
                         android:text="Happy"
@@ -314,7 +314,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/RoundedSquare"
-                    app:srcCompat="@android:drawable/title_bar" />
+                    app:srcCompat="@drawable/ic_cat" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -336,7 +336,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:shapeAppearanceOverlay="@style/RoundedSquare"
-                    app:srcCompat="@android:drawable/title_bar" />
+                    app:srcCompat="@drawable/ic_therapy" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
