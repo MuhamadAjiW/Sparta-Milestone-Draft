@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.332" />
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/drawable-v24/splash.xml" value="0.332" />
+        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/drawable/custombutton.xml" value="0.2575" />
+        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/drawable/customimage.xml" value="0.1" />
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/drawable/ic_launcher_background.xml" value="0.332" />
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/drawable/ic_splash.xml" value="0.332" />
-        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
-        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_home.xml" value="0.5" />
-        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/Muhamad/Desktop/b/Mind/app/src/main/res/layout/layout.xml" value="0.17147922998986828" />

@@ -8,32 +8,37 @@
 
     <Button
         android:id="@+id/signInButtonSignup"
-        android:layout_width="335dp"
-        android:layout_height="86dp"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custombutton"
         android:backgroundTint="#8BC6B8"
         android:fontFamily="@font/pt_sans_bold"
         android:onClick="signInClick"
         android:text="Already have an account?\nSign in"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signUpButtonSignup" />
 
     <Button
         android:id="@+id/signUpButtonSignup"
-        android:layout_width="335dp"
-        android:layout_height="86dp"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
         android:layout_marginTop="64dp"
+        android:background="@drawable/custombutton"
         android:backgroundTint="#EDA19A"
         android:fontFamily="@font/pt_sans_bold"
         android:onClick="signUpClick"
         android:text="Create Account"
-        android:textAllCaps="false"
 
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

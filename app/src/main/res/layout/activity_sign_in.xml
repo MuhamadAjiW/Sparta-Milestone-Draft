@@ -26,15 +26,16 @@
 
     <Button
         android:id="@+id/signUpButtonLogin"
-        android:layout_width="335dp"
-        android:layout_height="86dp"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
         android:layout_marginTop="48dp"
+        android:background="@drawable/custombutton"
         android:backgroundTint="#EDA19A"
         android:fontFamily="@font/pt_sans_bold"
-        android:onClick="loginClick"
-        android:text="Sign In"
 
+        android:text="Sign In"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

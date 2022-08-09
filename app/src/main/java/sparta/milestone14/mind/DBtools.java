@@ -5,8 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.text.TextUtils;
-import android.util.Log;
 
 public class DBtools extends SQLiteOpenHelper {
 
@@ -34,37 +32,44 @@ public class DBtools extends SQLiteOpenHelper {
         contentValues.put("password", password);
         contentValues.put("name", name);
         long result = LoginData.insert("users", null, contentValues);
-        if(result==-1) return false;
-        else
-            return true;
+        return result != -1;
     }
 
     public Boolean checkUsername(String username){
         SQLiteDatabase LoginData = this.getWritableDatabase();
         Cursor cursor = LoginData.rawQuery("Select * from users where username = ?", new String[] {username});
-        if (cursor.getCount()>0)
+        if (cursor.getCount()>0){
+            cursor.close();
             return true;
-        else
+        }
+        else{
+            cursor.close();
             return false;
+        }
     }
 
     public Boolean checkUsernamePassword(String username, String password){
         SQLiteDatabase LoginData = this.getWritableDatabase();
         Cursor cursor = LoginData.rawQuery("select * from users where username = ? and password = ?", new String[] {username,password});
-        if (cursor.getCount()>0)
+        if (cursor.getCount()>0){
+            cursor.close();
             return true;
-        else
+        }
+        else{
+            cursor.close();
             return false;
+        }
     }
 
     public String getName(String username){
         SQLiteDatabase LoginData = this.getWritableDatabase();
         Cursor cursor = LoginData.rawQuery("Select * from users where username = ?", new String[] {username});
-        Log.d("Debug", "Lewat mas");
 
         cursor.moveToFirst();
-        String output = cursor.getString(cursor.getColumnIndex("name"));
-        return output;
+        String result = cursor.getString(cursor.getColumnIndex("name"));
+
+        cursor.close();
+        return result;
     }
 
 }

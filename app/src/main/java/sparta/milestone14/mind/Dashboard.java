@@ -18,7 +18,6 @@ public class Dashboard extends AppCompatActivity {
         String username = extras.getString("username");
 
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
         setContentView(R.layout.activity_dashboard);
 
         DB = new DBtools(this);

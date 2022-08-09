@@ -10,36 +10,43 @@
 
     <Button
         android:id="@+id/signUpButton"
-        android:layout_width="335dp"
-        android:layout_height="86dp"
-        android:backgroundTint="#EDA19A"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custombutton"
+        android:backgroundTint="#EEA899"
+        android:backgroundTintMode="src_atop"
         android:fontFamily="@font/pt_sans_bold"
         android:onClick="signUpClick"
         android:text="Create Account"
         android:textAllCaps="false"
+
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/signInButton"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/signInButton"
-        android:layout_width="335dp"
-        android:layout_height="86dp"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
         android:layout_marginBottom="70dp"
-        android:backgroundTint="#8BC6B8"
+        android:background="@drawable/custombutton"
+        android:backgroundTint="#83CAC1"
+        android:backgroundTintMode="src_in"
         android:fontFamily="@font/pt_sans_bold"
         android:onClick="signInClick"
         android:text="Already have an account?\nSign in"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -57,4 +64,5 @@
 
         android:onClick="exitClick"
         />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
